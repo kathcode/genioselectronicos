@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Pastel base */
+  --background: 210 100% 99%;
+  --foreground: 222 47% 11%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+
+  /* Primary: SKY BLUE (pastel) */
+  --primary: 205 100% 83%;          /* #9FD7FF */
+  --primary-foreground: 222 47% 11%;
+
+  /* Secondary: MINT GREEN (pastel) — the banner’s green */
+  --secondary: 152 59% 78%;         /* #A6EBC9 */
+  --secondary-foreground: 222 47% 11%;
+
+  /* Accent: soft LILAC for highlights */
+  --accent: 260 57% 88%;            /* #E1D7FF */
+  --accent-foreground: 222 47% 11%;
+
+  /* Neutrals */
+  --muted: 210 40% 96%;             /* #EEF6FF */
+  --muted-foreground: 222 20% 30%;
+
+  --border: 210 35% 88%;
+  --input: 210 35% 88%;
+  --ring: 205 100% 83%;
+  --radius: 1rem;
+}
+
+.dark {
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+
+  --card: 222 47% 13%;
+  --card-foreground: 210 40% 98%;
+
+  /* Slightly richer but still gentle in dark mode */
+  --primary: 205 100% 73%;          /* #79C8FF */
+  --primary-foreground: 222 47% 11%;
+
+  --secondary: 152 45% 40%;         /* #3D9D79 */
+  --secondary-foreground: 210 40% 98%;
+
+  --accent: 260 55% 40%;
+  --accent-foreground: 210 40% 98%;
+
+  --muted: 222 35% 20%;
+  --muted-foreground: 210 25% 80%;
+
+  --border: 222 35% 22%;
+  --input: 222 35% 22%;
+  --ring: 205 100% 73%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+section {
+  scroll-margin-top: 6rem;
+}

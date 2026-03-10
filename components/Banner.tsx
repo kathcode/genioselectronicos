@@ -6,7 +6,7 @@ export function Banner() {
     <section id="inicio" className="relative">
       <div className="relative h-[68vh] w-full">
         <Image
-          src="https://github.com/kathcode/genioselectronicos/blob/main/public/banner.png"
+          src="/banner.png"
           alt="Equipo creativo trabajando con dispositivos electrónicos"
           fill
           priority
